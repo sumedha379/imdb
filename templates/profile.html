@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+  <head>
+	  <title> User Profile </title>
+  </head>
+
+
+<body>
+  <nav>
+    <div class = "navbar">
+      <h1>Movie DB</h1>
+      <a href="/index"> HOME </a>
+      <a href="/songs"> SONGS </a>
+      <a href="/movies"> MOVIES </a>
+      <a class ="active" href="/"> PROFILE </a>
+      <a href="/sign-up"> SIGN UP </a>
+      <a href="/login"> LOG IN </a>
+  </nav>
+  <div>
+    <h2>User Profile</h2>
+  </div>
+
+  <a href = "{{url_for('logout')}}"> LOG OUT </a>
+
+  <div>
+    {% for n in data %}
+    <div>{{n}}</div>
+    {% endfor %}
+  </div>
+
+
+</body>
+
+
+</html>

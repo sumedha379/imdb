@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+  <head>
+	  <title> Home </title>
+  </head>
+
+<body>
+  <nav>
+    <div class = "navbar">
+      <h1>IMDB</h1>
+        <a class="active"href="/"> HOME </a>
+        <a href="/songs"> SONGS </a>
+        <a href="/movies"> MOVIES </a>
+	      <a href="/signup"> SIGN UP </a>
+        <a href="/login"> LOG IN </a>
+    </div>
+  </nav>
+  
+  <div>
+    <h2>Get Movie Info</h2>
+  </div>
+
+  <form action="/movieinfo_results" method="GET">
+    <label for="movie_name">Movie name:</label>
+    <input type="text" id="movie_name" name="movie_name"><br><br>
+  </form>
+
+</body>
+
+
+</html>

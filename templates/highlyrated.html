@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+  <nav>
+    <div class = "navbar">
+      <h1>IMDB</h1>
+        <a class="active"href="/"> HOME </a>
+        <a href="/songs"> SONGS </a>
+        <a href="/movies"> MOVIES </a>
+	      <a href="/signup"> SIGN UP/LOG IN </a>
+       
+    </div>
+  </nav>
+
+<h2>Top Rated Movies</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Movie Name</th>
+    <th>Avg Rating</th>
+  </tr>
+  
+  {% for n in data %}
+    <tr> 
+    <td>{{n[0]}}</td>
+    <td>{{n[1]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
+

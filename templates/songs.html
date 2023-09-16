@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+  <head>
+	  <title> Songs </title>
+  </head>
+
+  <body>
+    <nav>
+      <div class = "navbar">
+        <h1> Movie DB </h1>
+        <a href="/index"> HOME </a>
+        <a class="active" href="/songs"> SONGS </a>
+        <a href="/movies"> MOVIES </a>
+        <a href="/signup"> SIGN UP </a>
+        <a href="/login"> LOG IN </a>
+      </div>
+    </nav>
+
+    <div>
+      <h2> Search Songs </h2>
+    </div>
+    
+
+    <form action="/song_results" method="GET">
+      <label for="song_name">Song:</label>
+      <input type="text" id="song_name" name="song_name"><br><br>
+      <label for="language">Language:</label>
+      <input type="text" id="language" name="language"><br><br>
+      <label for="singer">Singer:</label>
+      <input type="text" id="singer" name="singer"><br><br>
+      <input type="submit" value="Search">
+    </form>
+
+    
+  </body>
+
+
+</html>
